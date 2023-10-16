@@ -1,77 +1,90 @@
 .container {
-  display: grid;
-  grid-template-areas:
-    'nav'
-    'header'
-    'main'
-    'footer';
-  grid-template-rows: auto auto 1fr 36px;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.header {
-  grid-area: header;
-}
-
-.main {
-  grid-area: main;
-}
-
-.header,
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer {
-  grid-area: footer;
-  justify-self: center;
-}
-
-.nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  font-size: calc(10px + 2vmin);
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-.link {
-  color: #704cb6;
-}
-
-.link.active {
-  text-decoration: underline;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-float infinite 3s ease-in-out;
+    height: 100vh;
+    width: 100vw;
+    background: 
+    /* layer 1 */
+    radial-gradient(8px circle at 5% 90%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 8% 90%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 11% 90%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 14% 90%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 17% 90%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 20% 90%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 23% 90%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 26% 90%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 29% 90%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 32% 90%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 35% 90%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 38% 90%, #acacac3d 50%, transparent 51%),
+  
+  /* layer 2 */
+    radial-gradient(8px circle at 6.5% 87%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 9.5% 87%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 12.5% 87%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 15.5% 87%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 18.5% 87%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 21.5% 87%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 24.5% 87%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 27.5% 87%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 30.5% 87%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 33.5% 87%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 36.5% 87%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 39.5% 87%, #acacac3d 50%, transparent 51%),
+  
+  
+    /* layer 3 */
+    radial-gradient(8px circle at 5% 84%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 8% 84%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 11% 84%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 14% 84%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 17% 84%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 20% 84%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 23% 84%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 26% 84%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 29% 84%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 32% 84%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 35% 84%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 38% 84%, #acacac3d 50%, transparent 51%),
+   
+   /* layer 4 */
+   radial-gradient(8px circle at 6.5% 81%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 9.5% 81%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 12.5% 81%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 15.5% 81%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 18.5% 81%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 21.5% 81%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 24.5% 81%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 27.5% 81%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 30.5% 81%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 33.5% 81%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 36.5% 81%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 39.5% 81%, #acacac3d 50%, transparent 51%),
+  
+    /* layer 5 */
+    radial-gradient(8px circle at 5% 78%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 8% 78%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 11% 78%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 14% 78%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 17% 78%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 20% 78%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 23% 78%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 26% 78%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 29% 78%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 32% 78%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 35% 78%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 38% 78%, #acacac3d 50%, transparent 51%),
+  
+    /* layer 6 */
+    radial-gradient(8px circle at 6.5% 75%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 9.5% 75%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 12.5% 75%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 15.5% 75%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 18.5% 75%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 21.5% 75%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 24.5% 75%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 27.5% 75%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 30.5% 75%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 33.5% 75%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 36.5% 75%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 39.5% 75%, #acacac3d 50%, transparent 51%),
+  
+  
+    /* layer 7 */
+    radial-gradient(8px circle at 5% 72%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 8% 72%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 11% 72%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 14% 72%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 17% 72%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 20% 72%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 23% 72%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 26% 72%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 29% 72%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 32% 72%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 35% 72%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 38% 72%, #acacac3d 50%, transparent 51%),
+   
+   /* layer 8 */
+   radial-gradient(8px circle at 6.5% 69%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 9.5% 69%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 12.5% 69%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 15.5% 69%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 18.5% 69%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 21.5% 69%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 24.5% 69%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 27.5% 69%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 30.5% 69%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 33.5% 69%, #acacac3d 50%, transparent 51%),
+   radial-gradient(8px circle at 36.5% 69%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 39.5% 69%, #acacac3d 50%, transparent 51%),
+  
+    /* layer 9 */
+    radial-gradient(8px circle at 5% 66%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 8% 66%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 11% 66%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 14% 66%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 17% 66%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 20% 66%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 23% 66%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 26% 66%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 29% 66%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 32% 66%, #acacac3d 50%, transparent 51%),
+    radial-gradient(8px circle at 35% 66%, #acacac3d 50%, transparent 51%),radial-gradient(8px circle at 38% 66%, #acacac3d 50%, transparent 51%),
+    /*  */
+    radial-gradient(circle at 98%, #002f52b0,#002f52b0),
+    radial-gradient(ellipse at top, #002e52,transparent),
+    radial-gradient(ellipse at right, #002e52,transparent),
+    radial-gradient(ellipse at bottom, #002e52,transparent),  
+    radial-gradient(ellipse at left, #002e52,transparent);
   }
-}
-
-@keyframes logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+  
+  /*
+  
+  
+  
+  */
